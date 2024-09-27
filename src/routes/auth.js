@@ -53,5 +53,8 @@ router.get("/current_user", (req, res) => {
     res.status(401).json({ message: "User not authenticated" });
   }
 });
+router.get("/", (req, res) => {
+  res.status(200).json({ message: "Welcome" });
+});
 
 export default router;
